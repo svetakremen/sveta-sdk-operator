@@ -38,7 +38,10 @@ export GOROOT=$(go env GOROOT)
 
 3. Create operator:
 
-operator-sdk add api --kind .....
+operator-sdk new sveta-operator --type go --repo github.com/NautiluX/sveta-operator
+
+operator-sdk add api --kind Wordpress --api-version sveta.example.com/v1alpha1
+
 
 4. Create custom resource definitions: Add Spec to sveta-operator/pkg/apis/sveta/v1alpha1/wordpress_types.go (passsword)
 
