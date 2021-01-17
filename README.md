@@ -60,22 +60,29 @@ pod/wordpress-mysql-56d9f4dbd7-lwp9z       1/1     Running   0          22h
 NAME                                      READY   UP-TO-DATE   AVAILABLE   AGE
 
 deployment.apps/wordpress         1/1     1            1           22h
+
 deployment.apps/wordpress-mysql   1/1     1            1           22h
 
 NAME                                      TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
 
 service/kubernetes                        ClusterIP   10.96.0.1        <none>        443/TCP        4d23h
+ 
 service/wordpress                         NodePort    10.103.242.148   <none>        80:31973/TCP   22h
+ 
 service/wordpress-mysql                   ClusterIP   None             <none>        3306/TCP       22h
+ 
 
 NAME                                      STATUS      VOLUME                                  CAPACITY    ACCESS MODES     STORAGECLASS     AGE
 
 persistentvolumeclaim/mysql-pv-claim      Bound    pvc-fed14189-7455-4731-9ba5-6e2bbc937fb5   10Gi       RWO            standard       22h
+
 persistentvolumeclaim/wp-pv-claim         Bound    pvc-c943e984-eba3-4bbb-ab9b-b0b74bb4b913   10Gi       RWO            standard       22h
 
 NAME                                                   TYPE                                  DATA   AGE
 
 secret/default-token-tgp5r                             kubernetes.io/service-account-token   3      4d23h
+
 secret/sveta-operator-token-dfsd4                      kubernetes.io/service-account-token   3      24h
+
 
 
