@@ -47,7 +47,9 @@ sdk run --localode
 
 
 Result:
+
 minikube kubectl -- get pod,deployment,service,pvc,secret
+
 NAME                                   READY   STATUS    RESTARTS   AGE
 pod/example-wordpress-pod              1/1     Running   0          11m
 pod/wordpress-7c99b8b494-9sx2f         1/1     Running   0          10m
