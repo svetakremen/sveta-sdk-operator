@@ -1,7 +1,8 @@
 # sveta-operator
  
 Create a Kuberentes Operator using the operator-sdk project that deploys wordpress using on sql via a custom resource.
-Reference : 
+
+References : 
     https://developers.redhat.com/blog/2020/12/16/create-a-kubernetes-operator-in-golang-to-automatically-manage-a-simple-stateful-application/               
     
   https://opensource.com/article/20/3/kubernetes-operator-sdk
