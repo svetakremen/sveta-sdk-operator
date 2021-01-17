@@ -1,0 +1,6 @@
+apiVersion: sveta.example.com/v1alpha1
+kind: Wordpress
+metadata:
+  name: example-wordpress
+spec:
+  password: "abc"

@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sveta-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: sveta-operator
+  template:
+    metadata:
+      labels:
+        name: sveta-operator
+    spec:
+      serviceAccountName: sveta-operator
+      containers:
+        - name: sveta-operator
+          # Replace this with the built image name
+          image: sveta1111/sveta-example-operator
+          command:
+          - sveta-operator
+          imagePullPolicy: Always
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: "sveta-operator"
