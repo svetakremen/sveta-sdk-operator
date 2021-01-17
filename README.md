@@ -43,7 +43,7 @@ operator-sdk add controller --kind
 minikube kubectl -- apply -f /home/mercury10/operator/sveta-operator/deploy/crds/sve  ta.example.com_v1alpha1_wordpress_cr.yaml
 minikube kubectl -- apply -f /home/mercury10/operator/sveta-operator/deploy/crds/sve  ta.example.com_wordpresses_crd.yaml
 
-sdk run --localode 
+operator-sdk run --local 
 
 
 Result:
