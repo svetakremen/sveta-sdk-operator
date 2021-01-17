@@ -50,11 +50,13 @@ Result:
 
 minikube kubectl -- get pod,deployment,service,pvc,secret
 
-NAME                                   READY   STATUS    RESTARTS   AGE
+NAME                                       READY   STATUS    RESTARTS   AGE
 
 
-pod/wordpress-7c99b8b494-9sx2f         1/1     Running   0          22h
+pod/wordpress-7c99b8b494-9sx2f             1/1     Running   0          22h
 
-pod/wordpress-mysql-56d9f4dbd7-lwp9z   1/1     Running   0          22h
+pod/wordpress-mysql-56d9f4dbd7-lwp9z       1/1     Running   0          22h
+
+NAME                                      READY   UP-TO-DATE   AVAILABLE   AGE
 
 
