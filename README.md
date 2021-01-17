@@ -51,11 +51,13 @@ Result:
 minikube kubectl -- get pod,deployment,service,pvc,secret
 
 NAME                                   READY   STATUS    RESTARTS   AGE
+
 pod/example-wordpress-pod              1/1     Running   0          11m
 pod/wordpress-7c99b8b494-9sx2f         1/1     Running   0          10m
 pod/wordpress-mysql-56d9f4dbd7-lwp9z   1/1     Running   0          11m
 
 NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
+
 deployment.apps/wordpress         1/1     1            1           10m
 deployment.apps/wordpress-mysql   1/1     1            1           11m
 
@@ -65,10 +67,12 @@ service/wordpress         NodePort    10.103.242.148   <none>        80:31973/TC
 service/wordpress-mysql   ClusterIP   None             <none>        3306/TCP       11m
 
 NAME                                   STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLAS
+
 persistentvolumeclaim/mysql-pv-claim   Bound    pvc-fed14189-7455-4731-9ba5-6e2bbc937fb5   10Gi       RWO            standard
 persistentvolumeclaim/wp-pv-claim      Bound    pvc-c943e984-eba3-4bbb-ab9b-b0b74bb4b913   10Gi       RWO            standard
 
 NAME                                               TYPE                                  DATA   AGE
+
 secret/default-token-tgp5r                         kubernetes.io/service-account-token   3      4d
 secret/sveta-operator-token-dfsd4                  kubernetes.io/service-account-token   3      128m
 
