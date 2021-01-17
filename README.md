@@ -71,3 +71,5 @@ persistentvolumeclaim/wp-pv-claim      Bound    pvc-c943e984-eba3-4bbb-ab9b-b0b7
 NAME                                               TYPE                                  DATA   AGE
 secret/default-token-tgp5r                         kubernetes.io/service-account-token   3      4d
 secret/sveta-operator-token-dfsd4                  kubernetes.io/service-account-token   3      128m
+
+
