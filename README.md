@@ -40,8 +40,10 @@ operator-sdk add controller --kind
 
 6. Add code to controller to create subsequent watches for child resources, such as pod, deployment, service, PVC for mysql and wordpress
 7. 
-minikube kubectl -- apply -f /home/mercury10/operator/sveta-operator/deploy/crds/sve  ta.example.com_v1alpha1_wordpress_cr.yaml
-minikube kubectl -- apply -f /home/mercury10/operator/sveta-operator/deploy/crds/sve  ta.example.com_wordpresses_crd.yaml
+
+minikube kubectl -- apply -f /home/mercury10/operator/sveta-operator/deploy/crds/sveta.example.com_v1alpha1_wordpress_cr.yaml
+
+minikube kubectl -- apply -f /home/mercury10/operator/sveta-operator/deploy/crds/sveta.example.com_wordpresses_crd.yaml
 
 operator-sdk run --local 
 
